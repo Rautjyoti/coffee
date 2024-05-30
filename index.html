@@ -1,0 +1,324 @@
+<html>
+    <head>
+        <title>Website</title>
+    </head>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul{
+            position: fixed;
+            /* top: 500px; */
+            width: 100%;
+            height: 50px;
+            background-color: #4e342e;
+            display: flex;
+            align-items: center;
+            }
+            .logo{
+                margin-left: 20px;
+            }
+            .navbar ul li{
+            list-style: none;
+            }
+            .navbar ul li a{
+                margin: 34px;
+                padding: 7px;
+                text-decoration: none;
+                color: #ffffff;
+                font-size: larger;
+                font-weight: bold;
+            }
+            .navbar ul li a:hover{
+                background-color: #fff8e1;
+                color: rgb(36, 34, 34);
+                transition: 1s;
+            }
+            .search input{
+               margin-left: 60px;
+               /* margin-bottom: 50px; */
+               width: 230px;
+               height: 30px;
+            }
+            .btn input{
+                margin: 34px;
+                width: 90px;
+                height: 25px;
+                border: 2px solid #fff8e1;
+                background-color: #4e342e;
+                color: #fff8e1;
+            }
+            .btn input:hover{
+                color: black;
+                background-color: #fff8e1;
+            }
+            .home{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* background-color: #fff8e1; */
+
+            }
+            .home::before{
+    	        content: '';
+    	        position: absolute;
+    	        background: url("cof.jpeg") no-repeat center/cover;
+    	        height: 100%;
+    	        width: 100%;
+    	        left: 0;
+    	        top: 0;
+                z-index: -1;
+                filter:brightness(50%);
+            }
+            .h-side{
+                width: 60%;
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .h{
+                color:  #fff8e1;
+                font-weight: bolder;
+                margin: 23px;
+                font-size: 54px;
+            }
+            .p{
+                color:  #fff8e1;
+                font-size: 19px;
+                font-weight:bolder;
+                text-align: center;
+            }
+            .about{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff8e1;
+                }
+                .a-side{
+                /* background-color: rgb(255, 255, 255);
+                width: 90%;
+                height: 90%; */
+                /* display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; */
+                margin-top: 40px;
+                width: 90%;
+                /* border:2px solid #333333; */
+                height: 80%;
+                display: flex;
+                flex-direction: column; 
+                background-color:#d4a89d;
+                align-items: center;
+                justify-content: center;
+            }
+                .h1{
+                    display: flex;
+                    justify-content: center;
+                    padding: 15px;
+                    font-weight: bolder;
+                    font-size: 40px;
+                    color: #4e342e;
+                    }
+              .p1{
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+                font-weight: lighter;
+                padding: 40px;
+                text-align: center;
+                color: #333333;
+                /* border: 2px solid #333333;
+                border-radius: 20px; */
+                /* box-shadow: 10px 15px 5px 3px #938a6c; */
+                }
+                .services{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-color:  #fff8e1;
+                }
+                .container{
+                height: 100%;
+                width: 100%;
+		        display: flex;
+		        align-items: center;
+		        justify-content:space-evenly;
+               }
+               .box{
+                background-color: #fff8e1;
+		        height: 350px;
+		        width: 350px;
+                display: flex;
+                margin-bottom: 40px;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+               }
+               .h3{
+                /* display: flex;
+                justify-content: center; */
+                font-weight: bold;
+                font-size: 20px;
+                padding: 10px;
+                color: #4e342e;
+
+               }
+               .service{
+                font-size: 40px;
+                font-weight: bolder;
+                margin: 20px;
+                text-align: center;
+                padding: 50px;
+                margin-top: 40px;
+                color: #4e342e;
+            
+               }
+               .contact{
+                background-color: #fff8e1;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               }
+               .c-side{
+                height: 75%;
+                width: 40%;
+                display: flex;
+                /* align-items: center;  */
+                /* justify-content: center;  */
+                 flex-direction: column; 
+               background-color:#d4a89d;
+               /* border: 2px solid #333333; */
+               box-shadow: 20px 25px 5px 3px #938a6c;
+                
+            }
+            .con{
+                font-weight: bolder;
+                    font-size: 40px;
+                    color: #4e342e;
+                    display: flex;
+                    justify-content: center;
+            }
+            .contact{
+                    padding: 10px;
+                    font-size: 20px;
+                    color: #333333;
+                    display: flex;
+                    justify-content: center;
+            }
+            .form input{
+                font-size: 20px;
+            }
+            .form{
+                font-weight: bold;
+                color: #333333;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+            
+            }
+            .add{
+                display: flex;
+                justify-content: center;
+                /* flex-direction: column; */
+                align-items: center;
+                list-style: none;
+            }
+            .add li a{
+            margin: 10px;
+            text-decoration: none;
+            }
+            .button{
+                margin-left: 120px;
+                margin-right: 120px;
+                color:#fff8e1;
+                background-color: #9b766e;
+            }
+            .button:hover{
+                background-color: #fff8e1;
+                transition: 1s;
+                color: #333333;
+            }
+    </style>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <div class="logo"><img src="logo.png.crdownload" height="40px" width="50px" alt="logo"></div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="search"><input type="text" name="search" placeholder="Search..."></div>
+                <div class="btn"><input type="submit" name="submit"></div>
+               
+              </ul>
+           </nav>
+           <section id="home" class="home">
+            <div class="h-side">
+                <h1 class="h">Welcome To Brew Haven...</h1>
+                <p class="p">Your cozy corner for the best coffee in the town. Enjoy our special offers and feel at home</p>
+            </div>
+           </section>
+           <section id="about" class="about">
+            <div class="a-side">
+                <h1 class="h1">About us</h1>
+                <p class="p1">Welcome to cafe! Our maission is to elevate your coffee experience by providing high-quality beans, expert brewing techniques,
+                     and a platform for coffee culture. We aim to  your go-to resource for all things coffee, from sourcing the best beans to mastering the perfect 
+                     brew. We are committed to sourcing and providing only the highest quality coffee beans.
+                     We believe in empowering our community with knowledge about coffee brewing and tasting.
+                     We support sustainable and ethical coffee farming practices.
+                    </p>
+                </div>
+            </section>
+            <section id="services" class="services">
+                <h1 class="service">Our Services</h1>
+                <div class="container">
+                    <div class="box">
+                        <img src="tea.jpg" height="300px" width="350px">
+                       <h3 class="h3">Delicious Coffee and Tea</h3>
+                    </div>
+                    <div class="box">
+                        <img class="img" src="pastry.jpg" height="300px" width="350px">
+                        <h3 class="h3">Fresh Pastries</h3>
+                    </div>
+                    <div class="box">
+                        <img src="c.jpg" height="300px" width="350px">
+                        <h3 class="h3">Catering Services</h3>
+                    </div>
+          </section>
+          <section id="contact" class="contact">
+            <div class="c-side">
+                <h1 class="con">Contact Us</h1>
+                <form class="form">
+                    Name:  <br>   <input type="text" name="name" placeholder="name"><br>
+                    Email: <br>   <input type="text" name="name" placeholder="email"><br>
+                    Messages:<br> <input type="text" name="name" placeholder="message"><br>
+                    <input class="button" type="button" value="submit">
+                </form>
+                <p class="add"><b>Visit us at: 123 Coffee shop, vasai</b></p>
+                <p class="add">Follow us on social media:</p>
+                <ul class="add">
+                    <li><a  href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+        
+            </div>
+          </section>
+    </body>
+</html>
